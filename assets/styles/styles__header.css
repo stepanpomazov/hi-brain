@@ -5,6 +5,7 @@
 }
 
 .header__wrapper {
+  position: relative;
   height: 72px;
   display: flex;
   justify-content: space-between;
@@ -27,6 +28,8 @@
 }
 
 .header__regist {
+  position: absolute;
+  left:1000px;
   display: flex;
   column-gap: 8px;
 }
