@@ -1,0 +1,131 @@
+.padding-block-40px-160px {
+  padding-block: 40px 160px;
+}
+
+.items {
+  background-color: var(--grey-bg);
+}
+
+.items__nav-wrapper {
+  padding-bottom: 80px;
+}
+
+.items__list {
+  display: flex;
+  column-gap: 16px;
+}
+
+.items__nav-link:not(.checked) {
+  color: var(--grey);
+  padding: 8px 16px;
+  text-decoration: none;
+  
+}
+
+.checked {
+  background-color: rgba(42, 47, 55, 0.06);
+  color: var(--grey);
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.items__title {
+  font-family: var(--font-family-accent);
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 32px;
+}
+
+.items__box-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 450px);
+  gap: 48px 40px;
+  margin-bottom: 40px;
+}
+
+.items__item {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+}
+
+.item__header-wrapper {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.item__link-img {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+}
+
+.item__title {
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--blue);
+  margin-bottom: 16px;
+  margin-left: 24px;
+}
+
+.item__text {
+  color: var(--grey);
+  margin-bottom: 40px;
+  margin-inline: 24px;
+}
+
+.item__price {
+  text-align: end;
+  margin-right: 19px;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.item__footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-inline: 24px;
+  color: rgba(42, 47, 55, 0.4)
+}
+.wrapper__item-views {
+  display: flex;
+  gap: 8px;
+}
+
+.item__views-img {
+  width: 24px;
+  height: 24px;
+  background-image: url('../images/item/views.svg');
+}
+
+.c-grey {
+  color: var(--grey)
+}
+
+.items__btn-more {
+  display: block;
+  margin: 0 auto;
+  background-color: transparent;
+  padding: 12px 48px 12px 7px;
+  display: flex;
+  text-align: center;
+  column-gap: 7px;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 16px;
+  color: var(--grey);
+  border: 1px solid var(--grey);
+}
+
+.items__btn-bg-img {
+  background-image: url('../images/item/loading-more.svg');
+  width: 16px;
+  height: 16px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 49px;
+  display: inline-block;
+  margin-block: auto;
+}

@@ -1,0 +1,115 @@
+html{
+    box-sizing:border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+a {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+body {
+    min-width: 320px;
+    word-break: normal;
+    font-family: "Roboto", sans-serif;
+    background-color: #F5F5F5;
+}
+
+/* global */
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.btn-reset {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.df-align-center-justify-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 40px;
+}
+
+.text {
+    color: var(--color-gray-opacity-80);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+:root {
+    --color-white: #fff;
+    --color-white-opacity-12: rgba(255, 255, 255, 0.12);
+    --color-white-opacity-50: rgba(255, 255, 255, 0.5);
+    --color-white-opacity-60: rgba(255, 255, 255, 0.6);
+    --color-blue: #1E3DAF;
+    --color-light-blue: #516ED7;
+    --color-dark-blue: #0A2072;
+    --color-gray: #2A2F37;
+    --color-gray-opacity-2: rgba(42, 47, 55, 0.02);
+    --color-gray-opacity-6: rgba(42, 47, 55, 0.06);
+    --color-gray-opacity-12: rgba(42, 47, 55, 0.12);
+    --color-gray-opacity-40: rgba(42, 47, 55, 0.4);
+    --color-gray-opacity-80: rgba(42, 47, 55, 0.8);
+    --icon-color:  #b4b6b8;
+    --search-item-color: #d3d3d3;
+}
+
+.nav-btn {
+    padding: 8px 16px;
+    color: var(--color-gray);
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.nav-btn:hover {
+    padding: 8px 16px;
+    color: var(--color-gray);
+    background-color: var(--color-gray-opacity-6);
+}
+
+.btn-blue-style {
+    padding: 8px 16px;
+    color: var(--color-white);
+    background-color: var(--color-blue);
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn-blue-style:hover {
+    background-color: var(--color-light-blue);
+}
+
+.btn-blue-style:active {
+    background-color: var(--color-dark-blue);
+}
